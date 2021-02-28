@@ -1,0 +1,51 @@
+// vim: nospell
+{
+    "tsserver.log":"verbose",
+    "tsserver.enableJavascript":true,
+    "coc.preferences.hoverTarget": "echo",
+    "coc.preferences.enableFloatHighlight": true,
+    "coc.preferences.formatOnSaveFiletypes": ["c_", "javascript", "json_", "jsonc_", "html_"],
+    "coc.source.file.ignoreHidden": false,
+    "clangd.semanticHighlighting": true,
+    "clangd.arguments": ["--background-index"],
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json"],
+            "initializationOptions": {
+                "cache": { "directory": "/tmp/ccls" },
+                "client": { "snippetSupport": true },
+                "index": { "onChange": true },
+                "highlight": { "lsRanges": true }
+            }
+        }
+    },
+    "diagnostic.errorSign": "✘",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign": "",
+    "list.normalMappings": { "<C-c>": "do:exit" },
+    "list.insertMappings": { "<C-c>": "do:exit" },
+    "snippets.extends": {
+        "javascriptreact": ["javascript"],
+        "typescript": ["javascript"]
+    },
+    "codeLens.enable": true,
+    "snippets.ultisnips.usePythonx": false,
+    "suggest.asciiCharactersOnly": true,
+    "suggest.timeout": 5000,
+    "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.virtualText": true,
+    "diagnostic.format": "%message [%source]",
+    "prettier.printWidth": 160,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    "prettier.tabWidth": 4,
+    "html.autoClosingTags": true,
+
+    "javascript.showUnused":true,
+
+    "eslint.autoFixOnSave": true
+}

@@ -1,0 +1,42 @@
+# vim: nospell
+
+### Ignore all except folder and its content ###
+## without slash the wildcard also ignore everything, inclusive content within path/to/folder/
+# /*
+## unignore folder
+# !.config
+## ignore folder content
+# .config/*
+## unignore folder and its content
+# !.config/i3/
+
+### Another form to ignore all except a directory and its content
+# ignore all inclusive content inside folders
+*
+!.fehbg
+!.gitignore
+!README.MD
+!.config
+!.config/i3
+!.config/i3/*
+!.config/rofi
+!.config/rofi/*
+!.config/nvim
+!.config/nvim/*
+!.config/i3blocks
+!.config/terminator
+!.config/terminator/config
+!.config/wallpaper
+!.config/wallpaper/space.jpg
+
+!.local
+!.local/share
+!.local/share/fonts
+!.local/share/fonts/*
+
+!.vim
+!.vim/*
+.vim/autoload/
+.vim/viminfo
+!.vim/unplugged/gruvbox9
+!.vim/unplugged/gruvbox9/**/*

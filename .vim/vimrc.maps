@@ -1,0 +1,19 @@
+" vim: set foldmethod=manual
+
+let mapleader = ','
+
+map <leader>h :bprevious<cr>|                                   " Go to previous buffer
+map <leader>l :bnext<cr>|                                       " Go to next buffer
+
+map <C-J> <C-W>j|                                               " Change to bottom window 
+map <C-K> <C-W>k|                                               " Change to top window 
+map <C-L> <C-W>l|                                               " Change to left window 
+map <C-H> <C-W>h|                                               " Change to right window
+
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%|                                           " Open new buffer
+map <leader>es :sp %%|                                          " Open new buffer (horizontal split)
+map <leader>ev :vsp %%|                                         " Open new buffer (vertical split)
+map <leader>et :tabe %%|                                        " Open new buffer (tab)
+
+nnoremap <silent> <leader>fi :silent call OpenIndex() <CR>      " Open index file

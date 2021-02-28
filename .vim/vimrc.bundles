@@ -1,0 +1,50 @@
+" vim: set nospell
+
+call plug#begin('~/.vim/plugged')
+
+" eye candy
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'ayu-theme/ayu-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-scripts/Rainbow-Parenthesis'
+Plug 'Yggdroot/indentLine'
+Plug 'altercation/vim-colors-solarized'
+
+" syntax for c++
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+
+" Syntax for php/html
+Plug 'StanAngeloff/php.vim'
+Plug 'spf13/PIV'
+Plug 'vim-scripts/phtml.vim'
+
+" syntax for many languages
+Plug 'sheerun/vim-polyglot'
+
+" linter
+Plug 'vim-syntastic/syntastic'
+
+" format code
+Plug 'rhysd/vim-clang-format'
+
+" completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" General
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-misc'
+Plug 'tpope/vim-fugitive'
+
+" Initialize plugin system
+call plug#end()

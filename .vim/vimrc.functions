@@ -1,0 +1,13 @@
+" vim: foldmarker={,} foldmethod=marker nospell foldlevel=0
+
+function! OpenIndex()
+    let path = expand("%:p:h")
+    let fullPath = path . "/index.html"
+    if file_readable(fullPath)
+        :silent execute '!firefox '. fullPath .' &' | execute ':redraw!'
+    endif
+endfunction
+
+function! FindGitRoot()
+  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
